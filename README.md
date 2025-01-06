@@ -1,7 +1,7 @@
 ## rf - A minimalist framework for reproducible computation
 
 ```
-pip install git+https://github.com/apuapaquola/rf.git
+pip install git+https://github.com/apuapaquolaNIH/rf.git
 ```
 
 ## Preprint 

@@ -2,12 +2,12 @@ from setuptools import setup, find_packages
 
 setup(
     name='rf',
-    version='0.2.2',
+    version='0.3.0',
     description='A minimalist framework for reproducible computation',
     long_description='A git-based framework enabling workflow, sharing and reproducibility for computational analyses',
     author='Apuã Paquola',
-    author_email='apuapaquola@gmail.com',
-    url='https://github.com/apuapaquola/rf',
+    author_email='apua.paquola@nih.gov',
+    url='https://github.com/apuapaquolaNIH/rf',
     license='GPLv3',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha'

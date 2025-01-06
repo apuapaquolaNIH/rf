@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """ rf - A minimalist framework for reproducible computation
 
-    Copyright (C) 2015 Apuã Paquola <apuapaquola@gmail.com>
+    Copyright (C) 2025 Apuã Paquola <apua.paquola@nih.gov>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -36,20 +36,12 @@ class UnitTests(unittest.TestCase):
         """Creates dummy analysis tree and inits the git repo. It cds to 'dummy' """
         with open("dummy.tar.gz", "wb") as f:
             f.write(base64.b64decode(
-                b'H4sIAAAAAAAAA+2Z22qDQBRFfe5XTOl7nEvGeSs0Tb+jeIP0IRdihPbvO2MCkZPQRqpHSfdCIo6C' +
-                b'A/tc9jFFvV5/xdGgSI+zNpyVs7K5VvN5cz4RKe2MNVom4TmlZJJEwg67rSN1dUj3QkTprk5/fq7c' +
-                b'Vxwb4qVo9N9si/JlsCi4XX81l9rfV1pJBf05aOv/vhomBG7S38jE2cSHQMh/baWF/hwQ/ff1pv93' +
-                b'/Kq/s6f89+tSe/2NVi4Ssv+tXPLP9X96jLOPTVytHsp8tRWpEs+iUrPD5+G0oMOCbi2YsGCahbE3' +
-                b'D/7MOf/fptX/Uf9ZaOs/pf6v4P9YIPoX5a7/GLg5/7XzQWCa/p9o6M/BFf3DxbLPdzT6O9dBf+ef' +
-                b'j4SezeLjEba06H9jAejf1n90/+8tQJP/RsL/c0D8f0n9f0n9fwn/f0+c838xLf+P/s9CW//w+zpA' +
-                b'FHTX3/gOAP05uNS//ymw+/znQwH//7BwVf+eXWAX/xcGP39TW3z/ZYH4v5z6v5z6vxz+755o5/+U' +
-                b'vv9J1H8WiP6jz//KqWb+1wnqPwek/me0/me0/meo//cE9X/Lqcx/BvWfg0v9JzL/OejPwVX9R5z/' +
-                b'/HGc/xT6Pwek/xe0/xe0/xfo/wAAAAAAAAAAAAAAAAAAAAAAAAAAAEyFb6LrQrMAUAAA'))
-
+                b'''H4sIAAAAAAAAA+2dzW7TQBSFs66EeAIkI/bJnf94USRKK5UNKgt2SJWTWDQSSUp+pLLjSXkANrwC9pg2ZuKocWqPk/p8quR24mimnZxz51573Kvo7jKORvG8N1pNJj86dUBERqmgYyzrI90jZcC4EUpw0smJxAwn2QnuahmNw2qxjObJUG6j76vZtygabjnv44fLL+ezSTSeBp8X8Xzhvp79JsHD8Uhg/eDreHTKhKa+ChmTJ0nLKm3pS8F1yEicND1GUB9W9b16+7jX/8/k+8mvF3/S46dXL3/TGkf/mkvWCVS9w8pouf6z+b96iALT2Sh+V3Efj/k/Ix4waYQhoY3mAXHiAv7vhV38X1AwWY4n8SkzQrNQKUPdUCgtQ8UNosNRk+nfqr62KLCT/+f1n6z/jIb/+6DI/y8q7qOU/xtt/V8q+L8P9vL/Pu+K5EWuRcjg/0fN2v8vDsP/U/0nnzMy8H8fFPn/WcV9lPB/Q6Ss/3Os/72wn/+HXUb9UFMYojp03Kz9/+wQ/D/Tf7L+11j/eyE//+socL3tr7AXj/m/rf8L0kZpJZj1f80M/N8HqP+3m7z+r4f1hICd/D+vf2a0kvB/HxT7f/rz+8r6KLX+TxabxBlXHP7vg33W/8mpXcZIhTx5D6LDUZPXv1V9DSGg1Prf6p8Eg/97Ybv/n1fWRzn/N9b/NfzfC3v5P1PdvtIh54Jw/fe4cf3/vHH/N9b/OfzfC5vzX30VqHz9h2lF8H8foP7Tbjb1X30VqHT9h5MhBf/3QeH8r0PAfDV9eh87+b+9/5eS9C/N/3jiPfB/H8D/202h/itR/ZpH/d8oR/9Mptf/qMpBbKPl+n/zujcYT3uLm5N4eDMLRix4GyxYd3m3/NfA0waeaxBpg7ANTQ8ePJnN+u9h5H8S1/+9gPjfbjb1fyD5H+p/Xiic/wbzP273/3EpUf/zAvy/3RTqv8H8L9M/k1wh//OBk/8N3fxv6OZ/Q+R/zwnn/s+KI39GmfjPDLP6J+R/XkD8bzeO/iuO/Bll4n+mfxJGIv77wIn/Azf+D9z4P0D8f07k938f0v4vjuu/XkD8bzd5/R/U/i88/8ELzvyvQ8Aovq2qj53zP26SD4FI8z9hBPzfB/D/duPoP1F99TFgJ///T/8kBcH/fbDV/xuq/wkms/u/GPzfB/D/duPov/H6X6Z/EunzP1H/qx+n/he79b/Yrf/FqP89JwrWf5VvAy+f/3GJ5//5AfG/3RTov9qHP3T2yf+k/f8PvNvtZV+5/SlVDiyl5frPP//9kK7/MA3/9wH8v93k9X9Q138E6n8+cOa/8fpf+iwoe/8f7v/3Avy/3Tj6b7z+l+mfhMb9/15w6n+RW/+L3PpfhPofAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABN8ReUqGPUAKAAAA==
+'''))
         subprocess.check_call(['tar', 'xfz', 'dummy.tar.gz'])
         os.chdir('dummy')
-        subprocess.check_call(['git', 'init'])
-        subprocess.check_call(['git', 'annex', 'init'])
+        #subprocess.check_call(['git', 'init'])
+        #subprocess.check_call(['git', 'annex', 'init'])
 
     def skel_test_run(self):
         """Create dummy analysis tree, run driver scripts and check output"""
@@ -65,7 +57,7 @@ class UnitTests(unittest.TestCase):
 
                 command = '''export LC_ALL=C; find . -name '*.txt' | sort | md5sum'''
                 o = subprocess.check_output(command, shell=True).decode()
-                self.assertTrue(o.startswith('2be88994681ecef36d02636683a6bc9e'))
+                self.assertTrue(o.startswith('873a9c2d4a56e62c7afd955057e54ac1'))
 
                 command = '''export LC_ALL=C; cat `find . -name '*.txt'` | sort | md5sum'''
                 o = subprocess.check_output(command, shell=True).decode()
